@@ -1,7 +1,8 @@
 .main {
     width: 3.75rem;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.2);
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    background-color: white;
 }
 
 .main>.header {
@@ -11,6 +12,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #03a9f4;
+    box-shadow: 0px 0px 0.05rem #999;
 }
 
 .header>.logo {
@@ -42,6 +44,11 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 0 0.2rem;
+    box-shadow: 0 0 0.02rem #999;
+    margin-top: 0.08rem;
+    margin-left: 0.08rem;
+    margin-right: 0.08rem;
+    border-radius: 0.05rem;
 }
 
 .todo .list {
@@ -53,10 +60,24 @@ body {
     height: 0.32rem;
     line-height: 0.32rem;
     align-items: center;
-    background-color: lightblue;
+    /* background-color: lightblue; */
     overflow: hidden;
     border-radius: 0.05rem;
     margin-bottom: 0.08rem;
+    box-shadow: 0 0 0.02rem #999;
+}
+
+.todo .todoitem:nth-child(1) {
+    display: flex;
+    height: 0.32rem;
+    line-height: 0.32rem;
+    align-items: center;
+    /* background-color: lightblue; */
+    overflow: hidden;
+    border-radius: 0.05rem;
+    margin-bottom: 0.08rem;
+    box-shadow: 0 0 0.02rem #999;
+    margin-top: 0.08rem;
 }
 
 .todo .todoitem::before {
