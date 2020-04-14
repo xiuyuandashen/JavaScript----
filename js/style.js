@@ -28,6 +28,7 @@ inputDom.onkeydown = function(event) {
         todolist.push(objitem) //将代办时间放入数组
 
         //console.log(todolist)
+        inputDom.value = ""
         rander(todolist)
     }
 }
