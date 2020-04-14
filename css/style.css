@@ -1,0 +1,97 @@
+.main {
+    width: 3.75rem;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main>.header {
+    width: 3.75rem;
+    height: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #03a9f4;
+}
+
+.header>.logo {
+    width: 1.2rem;
+    height: 0.5rem;
+    text-align: center;
+    line-height: 0.5rem;
+    font-size: 0.25rem;
+    font-weight: 900;
+}
+
+.header>input {
+    height: 0.3rem;
+    margin: 0 0.2rem;
+    width: 2.2rem;
+    border-radius: 0.05rem;
+    border: none;
+    outline: none;
+    padding: 0 0.2rem;
+}
+
+body {
+    font-size: 16px;
+}
+
+.todo h3 {
+    height: 0.6rem;
+    line-height: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.2rem;
+}
+
+.todo .list {
+    padding: 0 0.2rem;
+}
+
+.todo .todoitem {
+    display: flex;
+    height: 0.32rem;
+    line-height: 0.32rem;
+    align-items: center;
+    background-color: lightblue;
+    overflow: hidden;
+    border-radius: 0.05rem;
+    margin-bottom: 0.08rem;
+}
+
+.todo .todoitem::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 0.04rem;
+    background-color: #03a9f4;
+}
+
+.todo .todoitem>input {
+    width: 0.25rem;
+    height: 0.25rem;
+    margin: 0 0.1rem;
+}
+
+.todo .todoitem .content {
+    width: 2.65rem;
+    color: #333;
+}
+
+.todo .todoitem .del {
+    background-color: orangered;
+    width: 0.4rem;
+    height: 0.2rem;
+    font-size: 0.12rem;
+    border-radius: 0.05rem;
+    margin: 0 0.1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.done .list .todoitem {
+    opacity: 0.5;
+    -webkit-filter: grayscale(1);
+}

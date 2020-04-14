@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,minimal-ui:ios">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src=""></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<!-- checked="checked" 默认打勾 -->
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="logo">计划表</div>
+            <input type="text" id="input">
+        </div>
+        <div class="doing todo">
+            <h3>
+                <span class="title">正在进行</span><span class="num">0</span>
+            </h3>
+            <div class="list">
+                <!-- <div class="todoitem">
+                    <input type="checkbox">
+                    <div class="content">今晚吃烧烤</div>
+                    <div class="del">删除</div>
+                </div> -->
+            </div>
+        </div>
+        <div class="done todo">
+            <h3>
+                <span class="title">已经完成</span><span class="num">0</span>
+            </h3>
+            <div class="list">
+                <!-- <div class="todoitem">
+
+                    <input type="checkbox" checked="checked">
+                    <div class="content">今晚吃烧烤</div>
+                    <div class="del">删除</div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/style.js"></script>
+<script>
+    window.onresize = function() {
+        setRem()
+    }
+
+    function setRem() {
+        var rem = window.innerWidth / 3.75; //假设1rem为10%屏幕宽度
+        var html = document.querySelector("html")
+        html.style.fontSize = rem + 'px'
+    }
+    setRem()
+</script>
+
+</html>
