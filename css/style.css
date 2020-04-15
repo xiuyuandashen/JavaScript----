@@ -116,3 +116,48 @@ body {
     opacity: 0.5;
     -webkit-filter: grayscale(1);
 }
+
+.main>.yy {
+    margin: 0 0.08rem;
+    margin-top: 0.05rem;
+    height: 0.6rem;
+    background-color: white;
+    box-shadow: 0 0 0.02rem #999;
+    border: none;
+    border-radius: 0.05rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bf>.icon-bf {
+    font-size: 0.25rem;
+}
+
+.jy {
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 1px solid #999;
+    border-radius: 0.25rem;
+    text-align: center;
+    line-height: 0.5rem;
+    font-size: 0.15rem;
+    color: white;
+    background-color: cadetblue;
+    /* outline: none; */
+    border: none;
+}
+
+.bfxz {
+    animation: xz 4s infinite linear;
+    /* transform: rotate(360deg); */
+}
+
+@keyframes xz {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
