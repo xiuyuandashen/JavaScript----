@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./iconfont.css">
     <script src=""></script>
     <style>
         * {
@@ -23,6 +24,15 @@
         <div class="header">
             <div class="logo">计划清单</div>
             <input type="text" id="input">
+        </div>
+        <div class="yy">
+            <audio src="../小星星Aurora - 坠落星空.flac"></audio>
+            <div class="bf"><span class="iconfont icon-bofang
+                icon-bf  "></span>
+            </div>
+            <input type="range" name="" id="in" min="0" max="1" step="0.01">
+            <div class="jy">静音</div>
+
         </div>
         <div class="doing todo">
             <h3>
@@ -63,6 +73,33 @@
         html.style.fontSize = rem + 'px'
     }
     setRem()
+
+    var audio = document.querySelector("audio")
+    var bfbtn = document.querySelector(".bf")
+    bfbtn.onclick = function() {
+        bfbtn.className = "bf"
+        if (audio.paused == true) {
+            audio.play()
+        } else {
+            audio.pause()
+        }
+    }
+    audio.onplaying = function() {
+        bfbtn.className += " bfxz";
+    }
+    var inputr = document.querySelector("#in")
+    inputr.onchange = function() {
+        var yl = inputr.value;
+        audio.volume = yl;
+    }
+    var mutedbtn = document.querySelector(".jy")
+    mutedbtn.onclick = function() {
+        if (audio.muted == true) {
+            audio.muted = false;
+        } else {
+            audio.muted = true;
+        }
+    }
 </script>
 
 </html>
